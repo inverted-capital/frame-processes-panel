@@ -1,8 +1,8 @@
-# starter-widget
+# Process viewer widget
 
-This repo demonstrates a minimal setup for building an Artifact widget. It loads
-and saves a custom `profile.json` file checked against a Zod schema. If the file
-is missing a default one is written automatically.
+This widget demonstrates an interactive interface for exploring process data.
+It renders a process tree, resource usage charts and message queues using mock
+data stored in `processes.json`.
 
 ## Development
 
@@ -21,13 +21,4 @@ another application.
 
 ### Data shape
 
-The profile data is defined in `src/types/account.ts`:
-
-```ts
-export const accountDataSchema = z.object({
-  name: z.string()
-})
-```
-
-The widget exposes a single input that edits this value and saves it back to
-`profile.json`.
+The process types are defined in `src/types/process.ts`.
