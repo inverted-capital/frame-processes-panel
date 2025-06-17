@@ -603,7 +603,7 @@ const ProcessesView: React.FC = () => {
   }
 
   return (
-    <div className="animate-fadeIn h-full flex flex-col">
+    <div className="p-6 animate-fadeIn h-full flex flex-col">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold flex items-center">
           <Cpu className="mr-2" size={24} />
